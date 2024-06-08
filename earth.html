@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>earth</title>
+</head>
+<style>
+body {
+background-color:#000214;
+position: absolute;
+left: 50%; top: 50%;
+-webkit-transform: translate(-50%, 50%);
+transform: translate(-50%, -50%);
+}
+
+#earth{
+width:300px;
+height: 300px;
+background: url("https://i.postimg.cc/8cmCBV11/images.jpg");
+border-radius: 50%;
+background-size: 650px; 
+box-shadow:inset  10px 10px 40px 15px;
+animation-name:rotate;
+animation-duration: 10s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+}
+@keyframes rotate{
+  from{
+    background-position:0px 0px;
+  }
+  to{
+    background-position:700px 0px;
+  }
+}
+</style>
+<body>
+<div id="earth"></div>
+</body>
+
+</html>
